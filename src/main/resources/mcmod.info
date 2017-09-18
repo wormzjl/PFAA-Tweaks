@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pfaatweaks",
+  "name": "PFAA tweaks",
+  "description": "Tweaking mod for project PFAA",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["wormzjl","SNIPER722"],
+  "credits": "The Forge and FML guys, CappCraft Players!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
