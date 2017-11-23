@@ -63,6 +63,27 @@ public class IETransformer implements IClassTransformer {
             ClassWriter cw = new ClassWriter(0);
             cn.accept(cw);
             return cw.toByteArray();
+        } else if (name.equals("blusunrize.immersiveengineering.common.blocks.metal.TileEntitySheetmetalTank")) {
+            ClassReader cr = new ClassReader(bytes);
+            ClassNode cn = new ClassNode();
+            cr.accept(cn, 0);
+            for (MethodNode mn : cn.methods) {
+                if (mn.name.equals("<init>")) {
+                    AbstractInsnNode n = mn.instructions.getFirst();
+                    while (n != null) {
+                        if (n.getOpcode() == Opcodes.LDC && ((LdcInsnNode) n).cst.equals(512000)) {
+                            break;
+                        }
+                        n = n.getNext();
+                    }
+                    if (n != null) {
+                        mn.instructions.set(n, new LdcInsnNode(1024000));
+                    }
+                }
+            }
+            ClassWriter cw = new ClassWriter(0);
+            cn.accept(cw);
+            return cw.toByteArray();
         } else {
             return bytes;
         }

@@ -48,7 +48,6 @@ public static Fluid hotbutene = FluidRegistry.getFluid("hotbutene");
     @Optional.Method(modid="Railcraft")
     public static void registerRCFuels()
     {
-        //Replace null with Fiuld created
         //Argunment fuel,heatValuePerBucket
         FuelManager.addBoilerFuel(lng, 55448);
         FuelManager.addBoilerFuel(lpg, 48000);
@@ -64,7 +63,6 @@ public static Fluid hotbutene = FluidRegistry.getFluid("hotbutene");
     @Optional.Method(modid="BuildCraft|Core")
     public static void registerBCFuels()
     {
-        //Replace null with Fiuld created
         //Argunment fuel,i,i1
         //BuildcraftFuelRegistry.fuel.addFuel(lng, 80, 25000);
     }
@@ -72,7 +70,6 @@ public static Fluid hotbutene = FluidRegistry.getFluid("hotbutene");
     @Optional.Method(modid="ImmersiveEngineering")
     public static void registerIEFuels()
     {
-        //Replace null with Fiuld created
         //Argunment fuel,time
         DieselHandler.registerFuel(lng, 433);
         DieselHandler.registerFuel(lng, 375);
@@ -88,7 +85,6 @@ public static Fluid hotbutene = FluidRegistry.getFluid("hotbutene");
     @Optional.Method(modid="IC2")
     public static void registerICFuels()
     {
-        //Replace null with
         //String fluidName, String fluidOutput, int huPerMB
         Recipes.liquidCooldownManager.addFluid("hotsyngas","syngas",100);
         Recipes.liquidCooldownManager.addFluid("hotethene","ethene",100);
