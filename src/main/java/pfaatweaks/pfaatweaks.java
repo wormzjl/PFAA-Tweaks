@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 /**
  * Created by Harry on 2017-02-23.
  */
-@Mod(name = "PFAAtweaks",modid = "pfaatweaks",version = "1.0")
+@Mod(name = "PFAAtweaks",modid = "pfaatweaks",version = "1.1")
 public class pfaatweaks {
 
     @EventHandler
@@ -24,7 +24,7 @@ public class pfaatweaks {
 
     @EventHandler
     public void postInitEvent(FMLPostInitializationEvent event){
-        //LiquidExtraReg.modifyfluid();
+        LiquidExtraReg.modifyfluid();
         //Railcraft
         LiquidExtraReg.registerRCFuels();
         //BuildCraft
@@ -32,7 +32,7 @@ public class pfaatweaks {
         //ImmersiveEngineering
         LiquidExtraReg.registerIEFuels();
         //IC2
-        //LiquidExtraReg.registerICFuels();
+        LiquidExtraReg.registerICFuels();
     }
 
 
